@@ -3,7 +3,7 @@ import java.time.LocalDate;
 class Zaman {
     int saat, dakika, saniye;
 
-
+    // Constructor
     public Zaman(int saat, int dakika, int saniye) {
         this.saat = saat;
         this.dakika = dakika;
@@ -30,11 +30,13 @@ class Zaman {
         }
     }
 
-    public void goster() {
 
+    public void goster() {
+        // Saati gösterme
         System.out.printf("Girilen Zaman: %02d:%02d:%02d\n", this.saat, this.dakika, this.saniye);
 
+
+        LocalDate bugun = LocalDate.now();
+        System.out.println("Bugünün Tarihi: " + bugun);
     }
 }
-
-
